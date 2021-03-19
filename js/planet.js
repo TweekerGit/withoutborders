@@ -1,5 +1,5 @@
 var width = 150,
-    height = 300,
+    height = 400,
     speed = -1e-2,
     start = Date.now();
 

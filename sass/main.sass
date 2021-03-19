@@ -34,10 +34,19 @@ header
         width: 100%
         display: flex
         justify-content: space-between
+        .left-block
+            margin-top: 150px 
+            h2
+                margin-bottom: 70px
+        .right-block
+            h2
+                margin-top: 70px
         div
             width: 30%
-            border: 1px solid black
             height: 500px
+            display: flex
+            flex-direction: column
+            align-items: center
             h2
                 font-family: $Colus
                 font-size: $h2FontSize
@@ -133,7 +142,7 @@ header
         display: flex
         flex-direction: column
         justify-content: center
-        margin-top: 60px
+        margin: 60px 0
         h2
             font-family: $Colus
             font-size: $h2FontSize
