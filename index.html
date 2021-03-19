@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/Extatica-Light.otf">
+    <title>Without</title>
+</head>
+<body>
+    
+    <!-- Шапка сайту -->
+    <!-- @@include('_header.html') -->
+    
+    <header>
+        <div>
+            <div class="header-element"><p>Що на вас чекає?</p></div>
+            <div class="header-element"><p>Хочу в табір</p></div>
+            <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
+            <div class="header-element"><p>Попередні роки</p></div>
+            <div class="header-element"><p>Про нас</p></div>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <div class="wrapper">
+
+        <!-- Початковий блок з Землею -->
+        <div class="presentation">
+            <div>
+                <h2>ДИТЯЧИЙ ТАБІР</h2>
+                <img src="" alt="">
+            </div>
+            <canvas class="earth"></canvas>
+            <div>
+                <img src="" alt="">
+                <h2>БЕЗ КОРДОНІВ</h2>
+            </div>
+        </div>
+
+        <!-- Про нас -->
+        <div class="about">
+            <div class="about-text">
+                <h2>ПРО НАС</h2>
+                <p>Так само рамки і місце навчання кадрів сприяє підготовки та реалізації нових пропозицій. З іншого боку склалася структура організації тягне за собою процес впровадження і модернізації моделі розвитку. Товариші! сформована структура організації тягне за собою процес впровадження і модернізації нових пропозицій. Повсякденна практика показує, що склалася структура організації вимагають визначення та уточнення істотних фінансових і адміністративних умов.</p>
+            </div>
+            <div class="about-image"><img src="images/EvaCross.svg" alt="cross"></div>
+        </div>
+
+        <!-- План табору -->
+        <div class="camp-plan">
+            <h2>ЩО ВАС ЧЕКАЄ В НАШОМУ ТАБОРІ?</h2>
+            <ul>
+                <li>&#9679;  Щоденні розваги</li>
+                <li>&#9679;  День обливання</li>
+                <li>&#9679;  Вечори біля багаття</li>
+                <li>&#9679;  Бесіди з наставниками</li>
+                <li>&#9679;  Пісні</li>
+                <li>&#9679;  Новий день - нова країна!</li>
+            </ul>
+        </div>
+
+        <!-- Анкета реєстрації -->
+        <div class="form">
+            <div class="form-title">
+                <h2>ХОЧЕШ З НАМИ?<br>ЗАПОВНЮЙ АНКЕТУ!</h2>
+                <p>*тільки для слухняних дітей<br>  старше 5 років</p>
+            </div>
+            <form action="">
+                <div class="form-element">
+                    <label for="firstName">Ім'я</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-element">
+                    <label for="lastName">Прізвище</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-element">
+                    <label for="sex">Стать</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-element">
+                    <label for="age">Вік</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-element">
+                    <label for="number">Номер телефону</label>
+                    <input type="text">
+                </div>
+                <div class="form-element">
+                    <button>В ТАБІР!</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Соціальні мережі -->
+        <div class="follow-us">
+            <h2>СЛІДКУЙ ЗА НАМИ В СОЦМЕРЕЖАХ!</h2>
+            <div class="subscribe">
+                <div class="social"><img src="images/facebook.svg" alt="facebook"></div>
+                <div class="social"><img src="images/instagram.svg" alt="instagram"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/planet.js"></script>
+
+</body>
+</html>

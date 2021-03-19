@@ -1,0 +1,139 @@
+$font25px: 25px
+$h2FontSize: 52px
+$Colus: Colus, serif
+$Extatica: Extatica, serif
+$font30px: 30px
+
+body
+    font-family: $Extatica
+    
+header
+    margin: 0 auto
+    width: 70%
+    div
+        width: 100%
+        display: flex
+        justify-content: space-around
+        padding: 10px 0
+        .header-element
+            width: 20%
+            padding: 34px 0
+            p
+                font-size: $font25px
+        .logo
+            width: 100px   
+ 
+.wrapper
+    width: 75%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    .presentation
+        width: 100%
+        display: flex
+        justify-content: space-between
+        div
+            width: 40%
+            border: 1px solid black
+            height: 500px
+            h2
+                font-family: $Colus
+                font-size: $h2FontSize
+                text-align: center
+        canvas
+            margin: 125px 0
+    .about
+        width: 85%
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        .about-text
+            width: 40%
+            margin-left: 50px
+            h2
+                margin: 0 0 40px 0
+                font-family: $Colus
+                font-size: $h2FontSize
+        .about-image
+            display: flex
+            justify-content: flex-end
+            width: 60%
+    .camp-plan
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            width: 75%
+            text-align: center
+            font-family: $Colus
+            font-size: $h2FontSize
+        ul
+            margin: 85px 0 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            li
+                width: 30%
+                font-size: $font30px
+                margin: 30px 70px
+    .form
+        width: 85%
+        margin: 50px 0
+        .form-title
+            margin-bottom: 100px
+            display: flex
+            justify-content: space-between
+            h2
+                font-size: $h2FontSize
+                font-family: $Colus
+            p
+                margin-right: 40px
+                align-self: flex-end
+                font-size: $font30px
+        form
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .form-element
+                display: flex
+                flex-direction: column
+                margin: 20px 0
+                width: 40%
+                label
+                    display: block
+                    font-size: $font25px
+                    margin: 0 0 10px 0
+                input
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    height: 40px
+                    padding-left: 5px
+                    width: 386px
+                    outline: none
+                button
+                    font-family: $Colus
+                    font-size: $font25px
+                    background: black
+                    color: white
+                    height: 68px
+                    width: 386px
+                    margin: 10px 0 0 0
+    .follow-us
+        display: flex
+        flex-direction: column
+        justify-content: center
+        h2
+            font-family: $Colus
+            font-size: $h2FontSize
+        .subscribe
+            margin-top: 100px
+            width: 100%
+            display: flex
+            justify-content: center
+            .social
+                margin: 0 50px

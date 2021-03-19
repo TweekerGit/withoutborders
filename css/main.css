@@ -1,0 +1,255 @@
+body {
+  font-family: Extatica, serif;
+}
+
+header {
+  margin: 0 auto;
+  width: 70%;
+}
+
+header div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+}
+
+header div .header-element {
+  width: 20%;
+  padding: 34px 0;
+}
+
+header div .header-element p {
+  font-size: 25px;
+}
+
+header div .logo {
+  width: 100px;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .presentation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .presentation div {
+  width: 40%;
+  border: 1px solid black;
+  height: 500px;
+}
+
+.wrapper .presentation div h2 {
+  font-family: Colus, serif;
+  font-size: 52px;
+  text-align: center;
+}
+
+.wrapper .presentation canvas {
+  margin: 125px 0;
+}
+
+.wrapper .about {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.wrapper .about .about-text {
+  width: 40%;
+  margin-left: 50px;
+}
+
+.wrapper .about .about-text h2 {
+  margin: 0 0 40px 0;
+  font-family: Colus, serif;
+  font-size: 52px;
+}
+
+.wrapper .about .about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60%;
+}
+
+.wrapper .camp-plan {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .camp-plan h2 {
+  width: 75%;
+  text-align: center;
+  font-family: Colus, serif;
+  font-size: 52px;
+}
+
+.wrapper .camp-plan ul {
+  margin: 85px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .camp-plan ul li {
+  width: 30%;
+  font-size: 30px;
+  margin: 30px 70px;
+}
+
+.wrapper .form {
+  width: 85%;
+  margin: 50px 0;
+}
+
+.wrapper .form .form-title {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .form .form-title h2 {
+  font-size: 52px;
+  font-family: Colus, serif;
+}
+
+.wrapper .form .form-title p {
+  margin-right: 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 30px;
+}
+
+.wrapper .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .form form .form-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+  width: 40%;
+}
+
+.wrapper .form form .form-element label {
+  display: block;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+.wrapper .form form .form-element input {
+  font-size: 25px;
+  font-family: Extatica, serif;
+  border-radius: 0;
+  background: #E9E9E9;
+  border: 0;
+  height: 40px;
+  padding-left: 5px;
+  width: 386px;
+  outline: none;
+}
+
+.wrapper .form form .form-element button {
+  font-family: Colus, serif;
+  font-size: 25px;
+  background: black;
+  color: white;
+  height: 68px;
+  width: 386px;
+  margin: 10px 0 0 0;
+}
+
+.wrapper .follow-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .follow-us h2 {
+  font-family: Colus, serif;
+  font-size: 52px;
+}
+
+.wrapper .follow-us .subscribe {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .follow-us .subscribe .social {
+  margin: 0 50px;
+}
+/*# sourceMappingURL=main.css.map */
