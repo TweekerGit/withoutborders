@@ -61,10 +61,12 @@ header div .logo {
 }
 
 .wrapper .presentation .left-block h2 {
+  margin-left: 85px;
   margin-bottom: 70px;
 }
 
 .wrapper .presentation .right-block h2 {
+  margin-right: 20px;
   margin-top: 70px;
 }
 
@@ -191,7 +193,7 @@ header div .logo {
 }
 
 .wrapper .form .form-title p {
-  margin-right: 40px;
+  margin-right: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 30px;
