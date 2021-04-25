@@ -1,28 +1,23 @@
+@font-face 
+    font-family: Extatica
+    src: url(../fonts/Extatica-Light.ttf) format("truetype")
+
+
+@font-face 
+    font-family: Colus
+    src: url(../fonts/Colus-Regular.ttf) format("truetype")
+
 $font25px: 25px
 $h2FontSize: 52px
-$Colus: Colus, serif
-$Extatica: Extatica, serif
+$Colus: Colus
+$Extatica: Extatica
 $font30px: 30px
 $default_block_margin: 150px
 
 body
     font-family: $Extatica
     
-header
-    margin: 0 auto
-    width: 70%
-    div
-        width: 100%
-        display: flex
-        justify-content: space-around
-        padding: 10px 0
-        .header-element
-            width: 20%
-            padding: 34px 0
-            p
-                font-size: $font25px
-        .logo
-            width: 100px   
+@import _header.sass
  
 .wrapper
     width: 75%
@@ -112,7 +107,7 @@ header
         form
             display: flex
             flex-wrap: wrap
-            justify-content: space-between
+            justify-content: space-around
             .form-element
                 display: flex
                 flex-direction: column
@@ -122,6 +117,30 @@ header
                     display: block
                     font-size: $font25px
                     margin: 0 0 10px 0
+                textarea
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    height: 150px
+                    outline: none
+                    width: 440px
+                    padding-left: 5px
+                    resize: none
+                select
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    outline: none
+                    width: 447px
+                    padding-left: 5px
+                    height: 42px
+                    background: url(../images/strelka.svg) no-repeat right #E9E9E9
+                    background-position-x: 420px
+                    -webkit-appearance: none
                 input
                     font-size: $font25px
                     font-family: $Extatica
@@ -130,7 +149,7 @@ header
                     border: 0
                     height: 40px
                     padding-left: 5px
-                    width: 386px
+                    width: 440px
                     outline: none
                 button
                     font-family: $Colus
@@ -138,8 +157,8 @@ header
                     background: black
                     color: white
                     height: 68px
-                    width: 391px
-                    margin: 10px 0 0 0
+                    width: 448px
+                    margin-top: 42px
     .follow-us
         display: flex
         flex-direction: column
@@ -156,3 +175,5 @@ header
             justify-content: center
             .social
                 margin: 0 50px
+
+@import _footer.sass

@@ -1,5 +1,15 @@
+@font-face {
+  font-family: Extatica;
+  src: url(../fonts/Extatica-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Colus;
+  src: url(../fonts/Colus-Regular.ttf) format("truetype");
+}
+
 body {
-  font-family: Extatica, serif;
+  font-family: Extatica;
 }
 
 header {
@@ -85,7 +95,7 @@ header div .logo {
 }
 
 .wrapper .presentation div h2 {
-  font-family: Colus, serif;
+  font-family: Colus;
   font-size: 52px;
   text-align: center;
 }
@@ -113,7 +123,7 @@ header div .logo {
 
 .wrapper .about .about-text h2 {
   margin: 0 0 40px 0;
-  font-family: Colus, serif;
+  font-family: Colus;
   font-size: 52px;
 }
 
@@ -150,7 +160,7 @@ header div .logo {
 .wrapper .camp-plan h2 {
   width: 75%;
   text-align: center;
-  font-family: Colus, serif;
+  font-family: Colus;
   font-size: 52px;
 }
 
@@ -189,7 +199,7 @@ header div .logo {
 
 .wrapper .form .form-title h2 {
   font-size: 52px;
-  font-family: Colus, serif;
+  font-family: Colus;
 }
 
 .wrapper .form .form-title p {
@@ -205,9 +215,8 @@ header div .logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .wrapper .form form .form-element {
@@ -228,26 +237,54 @@ header div .logo {
   margin: 0 0 10px 0;
 }
 
+.wrapper .form form .form-element textarea {
+  font-size: 25px;
+  font-family: Extatica;
+  border-radius: 0;
+  background: #E9E9E9;
+  border: 0;
+  height: 150px;
+  outline: none;
+  width: 440px;
+  padding-left: 5px;
+  resize: none;
+}
+
+.wrapper .form form .form-element select {
+  font-size: 25px;
+  font-family: Extatica;
+  border-radius: 0;
+  background: #E9E9E9;
+  border: 0;
+  outline: none;
+  width: 447px;
+  padding-left: 5px;
+  height: 42px;
+  background: url(../images/strelka.svg) no-repeat right #E9E9E9;
+  background-position-x: 420px;
+  -webkit-appearance: none;
+}
+
 .wrapper .form form .form-element input {
   font-size: 25px;
-  font-family: Extatica, serif;
+  font-family: Extatica;
   border-radius: 0;
   background: #E9E9E9;
   border: 0;
   height: 40px;
   padding-left: 5px;
-  width: 386px;
+  width: 440px;
   outline: none;
 }
 
 .wrapper .form form .form-element button {
-  font-family: Colus, serif;
+  font-family: Colus;
   font-size: 25px;
   background: black;
   color: white;
   height: 68px;
-  width: 391px;
-  margin: 10px 0 0 0;
+  width: 448px;
+  margin-top: 42px;
 }
 
 .wrapper .follow-us {
@@ -266,7 +303,7 @@ header div .logo {
 }
 
 .wrapper .follow-us h2 {
-  font-family: Colus, serif;
+  font-family: Colus;
   font-size: 52px;
 }
 
@@ -282,6 +319,79 @@ header div .logo {
 }
 
 .wrapper .follow-us .subscribe .social {
+  margin: 0 50px;
+}
+
+footer .footer--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer .footer--logo div {
+  margin: 10px;
+}
+
+footer .footer--logo div img {
+  height: 45px;
+  margin-right: 50px;
+}
+
+footer .footer--logo h2 {
+  font-size: 52px;
+  font-family: Colus;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer a {
+  color: white;
+}
+
+footer .footer .content--line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+footer .footer .content--line img {
+  height: 40px;
+}
+
+footer .footer .content--line a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 50px;
 }
 /*# sourceMappingURL=main.css.map */
