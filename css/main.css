@@ -14,10 +14,25 @@ body {
 
 header {
   margin: 0 auto;
-  width: 70%;
+  background: white;
 }
 
-header div {
+header .burger {
+  display: none;
+}
+
+header .neBurger {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+}
+
+header .neBurger div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,16 +42,17 @@ header div {
   padding: 10px 0;
 }
 
-header div .header-element {
+header .neBurger .header-element {
   width: 20%;
   padding: 34px 0;
 }
 
-header div .header-element p {
+header .neBurger .header-element p {
+  white-space: nowrap;
   font-size: 25px;
 }
 
-header div .logo {
+header .neBurger .logo {
   width: 100px;
 }
 
@@ -64,20 +80,38 @@ header div .logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wrapper .presentation .left-block {
-  margin-top: 80px;
+  width: 30%;
+  margin-bottom: 70px;
+  white-space: nowrap;
 }
 
 .wrapper .presentation .left-block h2 {
+  margin-top: 30px;
   margin-left: 85px;
   margin-bottom: 70px;
+}
+
+.wrapper .presentation .left-block img {
+  width: 400px;
+}
+
+.wrapper .presentation .right-block {
+  width: 30%;
 }
 
 .wrapper .presentation .right-block h2 {
   margin-right: 20px;
   margin-top: 70px;
+  white-space: nowrap;
+}
+
+.wrapper .presentation .right-block img {
+  width: 400px;
 }
 
 .wrapper .presentation div {
@@ -100,8 +134,38 @@ header div .logo {
   text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .presentation div h2 {
+    font-size: 40px;
+  }
+}
+
 .wrapper .presentation canvas {
   margin: 125px 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper .presentation .left-block, .wrapper .presentation .right-block, .wrapper .presentation div {
+    width: 100%;
+  }
+  .wrapper .presentation .left-block img, .wrapper .presentation .right-block img, .wrapper .presentation div img {
+    width: 70%;
+  }
+  .wrapper .presentation .left-block {
+    margin-bottom: 0;
+  }
+  .wrapper .presentation .left-block h2 {
+    margin: 45px 0 85px;
+  }
+  .wrapper .presentation .left-block img {
+    text-align: center;
+  }
+  .wrapper .presentation canvas {
+    margin: 0;
+  }
+  .wrapper .presentation .right-block h2 {
+    margin: 85px 0 0;
+  }
 }
 
 .wrapper .about {
@@ -127,9 +191,21 @@ header div .logo {
   font-size: 52px;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .about .about-text h2 {
+    font-size: 35px;
+  }
+}
+
 .wrapper .about .about-text p {
   font-size: 25px;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .about .about-text p {
+    font-size: 25px;
+  }
 }
 
 .wrapper .about .about-image {
@@ -140,6 +216,55 @@ header div .logo {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 60%;
+}
+
+@media screen and (max-width: 1450px) {
+  .wrapper .about {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .about .about-image {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .about .about-text {
+    margin: 0;
+    width: 100%;
+  }
+  .wrapper .about .about-text p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1250px) and (max-width: 900px) {
+  .wrapper .about .about-text p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper .about .about-text h2 {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper .about .about-image img {
+    width: 80%;
+  }
 }
 
 .wrapper .camp-plan {
@@ -164,6 +289,12 @@ header div .logo {
   font-size: 52px;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .camp-plan h2 {
+    font-size: 35px;
+  }
+}
+
 .wrapper .camp-plan ul {
   margin: 85px 0 0;
   display: -webkit-box;
@@ -176,10 +307,51 @@ header div .logo {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .camp-plan ul {
+    margin: 30px 0 0;
+  }
+}
+
 .wrapper .camp-plan ul li {
   width: 30%;
   font-size: 30px;
   margin: 30px 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .camp-plan ul li {
+    font-size: 25px;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper .camp-plan ul li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper .camp-plan ul .noLi {
+    display: none;
+  }
+  .wrapper .camp-plan ul li {
+    width: 100%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .wrapper .camp-plan ul li {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper .camp-plan ul li {
+    margin-left: 20%;
+  }
 }
 
 .wrapper .form {
@@ -200,13 +372,27 @@ header div .logo {
 .wrapper .form .form-title h2 {
   font-size: 52px;
   font-family: Colus;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .form .form-title h2 {
+    font-size: 35px;
+  }
 }
 
 .wrapper .form .form-title p {
+  white-space: nowrap;
   margin-right: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .form .form-title p {
+    font-size: 25px;
+  }
 }
 
 .wrapper .form form {
@@ -231,7 +417,14 @@ header div .logo {
   width: 40%;
 }
 
+@media screen and (max-width: 600px) {
+  .wrapper .form form .form-element .alergy {
+    white-space: normal;
+  }
+}
+
 .wrapper .form form .form-element label {
+  white-space: nowrap;
   display: block;
   font-size: 25px;
   margin: 0 0 10px 0;
@@ -260,8 +453,7 @@ header div .logo {
   width: 447px;
   padding-left: 5px;
   height: 42px;
-  background: url(../images/strelka.svg) no-repeat right #E9E9E9;
-  background-position-x: 420px;
+  background: url(../images/strelka.png) no-repeat right #E9E9E9;
   -webkit-appearance: none;
 }
 
@@ -287,10 +479,61 @@ header div .logo {
   margin-top: 42px;
 }
 
+@media screen and (max-width: 1680px) {
+  .wrapper .form .form-title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .form .form-title p {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .wrapper .form .form-title h2, .wrapper .form .form-title p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .wrapper .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .form .form-title {
+    margin: 0 0 30px;
+  }
+  .wrapper .form form {
+    width: 80%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .form form .form-element {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .form form .form-element input, .wrapper .form form .form-element textarea, .wrapper .form form .form-element select, .wrapper .form form .form-element button {
+    width: 100%;
+  }
+  .wrapper .form form label {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 .wrapper .follow-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -302,9 +545,22 @@ header div .logo {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .follow-us {
+    margin-bottom: 70px;
+  }
+}
+
 .wrapper .follow-us h2 {
+  text-align: center;
   font-family: Colus;
   font-size: 52px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .follow-us h2 {
+    font-size: 35px;
+  }
 }
 
 .wrapper .follow-us .subscribe {
@@ -318,8 +574,20 @@ header div .logo {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .follow-us .subscribe {
+    margin-top: 50px;
+  }
+}
+
 .wrapper .follow-us .subscribe .social {
   margin: 0 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .follow-us .subscribe .social img {
+    width: 60px;
+  }
 }
 
 footer .footer--logo {
@@ -350,6 +618,12 @@ footer .footer--logo h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  footer .footer--logo h2 {
+    font-size: 25px;
+  }
 }
 
 footer .footer {
@@ -393,5 +667,12 @@ footer .footer .content--line a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

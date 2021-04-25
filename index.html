@@ -15,8 +15,11 @@
 <body>
     
     <!-- Шапка сайту -->
-    <header>
-        <div>
+    <header id="header">
+        <div class="burger">
+            <span></span>
+        </div>
+        <div class="neBurger">
             <div class="header-element"><p>Що на вас чекає?</p></div>
             <div class="header-element"><p>Хочу з вами</p></div>
             <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
@@ -32,11 +35,11 @@
         <div class="presentation">
             <div class="left-block">
                 <h2 style="white-space:nowrap">ДИТЯЧЕ ДОЗВІЛЛЯ</h2>
-                <img src="images/left-presentation.png" alt="left-block" style="width: 400px;">
+                <img src="images/left-presentation.png" alt="left-block">
             </div>
-            <canvas class="earth"></canvas>
+            <div class="animka"><canvas class="earth"></canvas></div>
             <div class="right-block">
-                <img src="images/right-presentation.png" alt="right-block" style="width: 400px;">
+                <img src="images/right-presentation.png" alt="right-block">
                 <h2>БЕЗ КОРДОНІВ</h2>
             </div>
         </div>
@@ -62,7 +65,7 @@
                 <li>&#9679;  Бесіди з наставниками</li>
                 <li>&#9679;  Пісні</li>
                 <li>&#9679;  Новий день - нова країна!</li>
-                <li></li>
+                <li class="noLi"></li>
                 <li>&#9679;  Та багато чого іншого!</li>
             </ul>
         </div>
@@ -97,7 +100,7 @@
                     <input type="text">
                 </div>
                 <div class="form-element">
-                    <label for="alergy">Маєш алергію? Напиши нам про це!</label>
+                    <label for="alergy" class="alergy">Маєш алергію? Напиши нам про це!</label>
                     <textarea name="alergy" id="alergy" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-element">
@@ -143,6 +146,20 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
     <script src="js/planet.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 
 </body>
 </html>

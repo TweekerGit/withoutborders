@@ -1,3 +1,5 @@
+$font900px: 25px
+    
 footer
     .footer--logo
         display: flex
@@ -10,6 +12,8 @@ footer
                 margin-right: 50px
         h2
             font-size: $h2FontSize
+            @media screen and ( max-width: 900px )
+                font-size: $font900px
             font-family: $Colus
             display: flex
             align-items: center
