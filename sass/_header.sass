@@ -35,10 +35,14 @@ header
             @media screen and ( max-width: 1200px )
                 width: 100%
             padding: 34px 0
+            @media screen and ( max-width: 630px )
+                padding: 15px 0
             .navElement
                 white-space: nowrap
                 text-align: center
                 font-size: $font25px
+                @media screen and ( max-width: 630px )
+                    font-size: 20px
                 cursor: pointer
             .years__hidden
                 display: none
@@ -50,9 +54,13 @@ header
                 z-index: 9999
                 top: 75px
                 background-color: #ebebeb
+                @media screen and ( max-width: 630px )
+                    top: 40px
                 li
                     text-align: center 
                     padding: 10px 120px
+                    @media screen and ( max-width: 630px )
+                        padding: 10px 60px
                     font-size: $font25px
                     position: relative
                     .year
@@ -67,9 +75,11 @@ header
                         left: 287px
                         @media screen and ( max-width: 1200px )
                             left: -287px
-                        top: 0
+                        @media screen and ( max-width: 630px )
+                            left: -148px
+                        top: 0 
                         a   
-                            margin: 5px 0
+                            margin: 10px 0
                             color: white
                             text-decoration: none
                 li:hover .list__element__hidden
@@ -112,5 +122,3 @@ header
 
 .neBurger.open-menu
         right: -50%
-body
-            

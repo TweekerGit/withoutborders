@@ -86,11 +86,23 @@ header .neBurger .header-element {
   }
 }
 
+@media screen and (max-width: 630px) {
+  header .neBurger .header-element {
+    padding: 15px 0;
+  }
+}
+
 header .neBurger .header-element .navElement {
   white-space: nowrap;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  header .neBurger .header-element .navElement {
+    font-size: 20px;
+  }
 }
 
 header .neBurger .header-element .years__hidden {
@@ -111,11 +123,23 @@ header .neBurger .header-element .years__hidden.showList {
   background-color: #ebebeb;
 }
 
+@media screen and (max-width: 630px) {
+  header .neBurger .header-element .years__hidden.showList {
+    top: 40px;
+  }
+}
+
 header .neBurger .header-element .years__hidden.showList li {
   text-align: center;
   padding: 10px 120px;
   font-size: 25px;
   position: relative;
+}
+
+@media screen and (max-width: 630px) {
+  header .neBurger .header-element .years__hidden.showList li {
+    padding: 10px 60px;
+  }
 }
 
 header .neBurger .header-element .years__hidden.showList li .year {
@@ -139,8 +163,14 @@ header .neBurger .header-element .years__hidden.showList li .list__element__hidd
   }
 }
 
+@media screen and (max-width: 630px) {
+  header .neBurger .header-element .years__hidden.showList li .list__element__hidden {
+    left: -148px;
+  }
+}
+
 header .neBurger .header-element .years__hidden.showList li .list__element__hidden a {
-  margin: 5px 0;
+  margin: 10px 0;
   color: white;
   text-decoration: none;
 }
@@ -299,6 +329,12 @@ header .neBurger .logo {
   }
 }
 
+@media screen and (max-width: 435px) {
+  .wrapper .presentation div h2 {
+    font-size: 30px;
+  }
+}
+
 .wrapper .presentation canvas {
   margin: 125px 0;
 }
@@ -324,6 +360,12 @@ header .neBurger .logo {
   }
   .wrapper .presentation .right-block h2 {
     margin: 85px 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .presentation {
+    width: 140%;
   }
 }
 
@@ -353,6 +395,12 @@ header .neBurger .logo {
 @media screen and (max-width: 900px) {
   .wrapper .about .about-text h2 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .wrapper .about .about-text h2 {
+    font-size: 30px;
   }
 }
 
@@ -454,6 +502,12 @@ header .neBurger .logo {
   }
 }
 
+@media screen and (max-width: 435px) {
+  .wrapper .camp-plan h2 {
+    font-size: 30px;
+  }
+}
+
 .wrapper .camp-plan ul {
   margin: 85px 0 0;
   display: -webkit-box;
@@ -537,6 +591,12 @@ header .neBurger .logo {
 @media screen and (max-width: 900px) {
   .wrapper .form .form-title h2 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .wrapper .form .form-title h2 {
+    font-size: 30px;
   }
 }
 
@@ -692,6 +752,12 @@ header .neBurger .logo {
   }
 }
 
+@media screen and (max-width: 560px) {
+  .wrapper .form form {
+    width: 100%;
+  }
+}
+
 .wrapper .follow-us {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -719,6 +785,12 @@ header .neBurger .logo {
 @media screen and (max-width: 900px) {
   .wrapper .follow-us h2 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .wrapper .follow-us h2 {
+    font-size: 30px;
   }
 }
 
