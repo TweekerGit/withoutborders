@@ -96,6 +96,8 @@ header .neBurger .header-element .navElement {
   white-space: nowrap;
   text-align: center;
   font-size: 25px;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
@@ -243,6 +245,10 @@ header .neBurger .logo {
 
 .neBurger.open-menu {
   right: -50%;
+}
+
+.displayBlock {
+  display: block;
 }
 
 .wrapper {
@@ -912,5 +918,361 @@ footer .footer .content--line a {
   top: 0;
   width: 100%;
   margin: 0 auto;
+}
+
+.mentorWrapper {
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+.mentorWrapper .leftPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mentorWrapper .leftPhoto .allInformation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mentorWrapper .leftPhoto .allInformation .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentorWrapper .leftPhoto .allInformation .photo {
+    width: 100%;
+    margin: 0 0 80px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .mentorWrapper .leftPhoto .allInformation .photo img {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .leftPhoto .allInformation .info {
+  width: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentorWrapper .leftPhoto .allInformation .info {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .leftPhoto .allInformation .info h2 {
+  font-family: Colus;
+  font-size: 52px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1450px) {
+  .mentorWrapper .leftPhoto .allInformation .info h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .leftPhoto .allInformation .info h2 {
+    font-size: 35px;
+    white-space: normal;
+  }
+}
+
+.mentorWrapper .leftPhoto .allInformation .info p {
+  font-family: Extatica;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .leftPhoto .allInformation .info p {
+    font-size: 20px;
+  }
+}
+
+.mentorWrapper .leftPhoto .allInformation .info .hoby {
+  margin: 95px 0 36px;
+}
+
+.mentorWrapper .leftPhoto .allInformation .info .hoby span {
+  text-decoration: underline;
+}
+
+.mentorWrapper .leftPhoto .fishes {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .leftPhoto .fishes img {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .leftPhoto .allInformation {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mentorWrapper .leftPhoto .allInformation .photo img {
+  -webkit-box-shadow: -10px -10px 5px #808080;
+          box-shadow: -10px -10px 5px #808080;
+}
+
+.mentorWrapper .rightPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mentorWrapper .rightPhoto .allInformation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mentorWrapper .rightPhoto .allInformation .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentorWrapper .rightPhoto .allInformation .photo {
+    width: 100%;
+    margin: 0 0 80px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .mentorWrapper .rightPhoto .allInformation .photo img {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .rightPhoto .allInformation .info {
+  width: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentorWrapper .rightPhoto .allInformation .info {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .rightPhoto .allInformation .info h2 {
+  font-family: Colus;
+  font-size: 52px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1450px) {
+  .mentorWrapper .rightPhoto .allInformation .info h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .rightPhoto .allInformation .info h2 {
+    font-size: 35px;
+    white-space: normal;
+  }
+}
+
+.mentorWrapper .rightPhoto .allInformation .info p {
+  font-family: Extatica;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .rightPhoto .allInformation .info p {
+    font-size: 20px;
+  }
+}
+
+.mentorWrapper .rightPhoto .allInformation .info .hoby {
+  margin: 95px 0 36px;
+}
+
+.mentorWrapper .rightPhoto .allInformation .info .hoby span {
+  text-decoration: underline;
+}
+
+.mentorWrapper .rightPhoto .fishes {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+  .mentorWrapper .rightPhoto .fishes img {
+    width: 80%;
+  }
+}
+
+.mentorWrapper .rightPhoto .allInformation {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.mentorWrapper .rightPhoto .allInformation .photo img {
+  -webkit-box-shadow: 10px 10px 5px #808080;
+          box-shadow: 10px 10px 5px #808080;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentorWrapper .rightPhoto .allInformation .photo img {
+    -webkit-box-shadow: -10px -10px 5px #808080;
+            box-shadow: -10px -10px 5px #808080;
+  }
+}
+
+.main .campInfo {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .main .campInfo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.main .campInfo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .main .campInfo div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.main .campInfo .place, .main .campInfo .year {
+  margin: 0 20px;
+  font-size: 52px;
+  font-family: Colus;
+}
+
+@media screen and (max-width: 850px) {
+  .main .campInfo .place, .main .campInfo .year {
+    font-size: 40px;
+    font-family: Colus;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .campInfo .place, .main .campInfo .year {
+    margin: 0 10px 0 20px;
+    font-size: 30px;
+    font-family: Colus;
+  }
+}
+
+.main .campInfo .season {
+  margin: 0 20px;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+@media screen and (max-width: 850px) {
+  .main .campInfo .season {
+    font-size: 20px;
+    font-family: Extatica;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .campInfo .season {
+    font-size: 15px;
+    font-family: Extatica;
+  }
+}
+
+.main .photoLines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .photoLines .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+}
+
+.main .photoLines .line img {
+  width: 100%;
+  margin: 1%;
 }
 /*# sourceMappingURL=main.css.map */
